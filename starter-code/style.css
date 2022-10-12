@@ -19,6 +19,7 @@ header {
     margin: 27px 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -125,7 +126,10 @@ h1 {
 .img-div {
     display: flex;
     justify-content: space-between;
+}
 
+.square-top, .square-btm {
+    display: none;
 }
 
 .img2 {
@@ -215,6 +219,7 @@ footer p {
     header {
         margin: 49px 39px 131px;
     }
+
     /* start section */
     #start-section {
         margin: 131px 39px 100px;
@@ -228,6 +233,7 @@ footer p {
     .mobile-img, .desktop-img {
         display: none;
     }
+
     .btn-and-date { 
         justify-content: flex-start;
     }
@@ -285,6 +291,106 @@ footer p {
     
     .card {
         width: 50%;
+        align-items: flex-start;
+    }
+
+    h3 {
+        text-align: unset;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    header {
+        margin: 55px 165px 0;
+    }
+
+    /* start section */
+    #start-section {
+        margin: 143px 165px 138px;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-img, .tablet-img {
+        display: none;
+    }
+    
+    .btn-and-date { 
+        justify-content: flex-start;
+    }
+
+    .pre-order-btn {
+        margin-right: 37px;
+    }
+
+    /* img section */
+    .img1 {
+        margin-right: 165px;
+        top: -540px;
+        width: 540px;
+    }
+
+    .square-top {
+        display: block;
+        position: absolute;
+        top: -540px;
+        right: 0;
+    }
+
+    .square-btm {
+        display: block;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 247px;
+    }
+
+    .img-div {
+        justify-content: flex-start;
+        margin: 0 165px 168px;
+    }
+
+    .img2 {
+        margin-right: 30px;
+        width: 20%;
+        margin-left: 0;
+    }
+
+    .img3 {
+        width: 40%; 
+    }
+
+    /* main section */
+    #main-section {
+        margin: 0 165px 128px;
+    }
+
+    #main-section p {
+        max-width: 90%;
+    }
+
+    .text-container {
+        position: absolute;
+        top: 818px;
+        right: 165px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 300px;
+    }
+
+    .text-container h2 {
+        margin-bottom: 27px;
+    }
+
+    .card-div {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: 100%;
     }
 
 }
